@@ -1,7 +1,5 @@
 *
 !.gitignore
-!nvim
-!tmux
 !nvim/**
 !tmux/**
 
