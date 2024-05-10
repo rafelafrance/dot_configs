@@ -1,0 +1,3 @@
+return {
+	"ovikrai/mojo-syntax",
+}
