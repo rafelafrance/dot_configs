@@ -1,0 +1,26 @@
+xmodmap -e "pointer = 1 2 3 4 5 0 0 0 0 0" # the fix
+
+export EDITOR='nvim'
+
+alias python='python3'
+
+alias wezterm='flatpakun org.wezfurlong.wezterm'
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+alias ls='ls --color=auto'
+alias vim='nvim'
+
+export MODULAR_HOME="/home/rafe/.modular"
+export PATH="/home/rafe/.modular/pkg/packages.modular.com_max/bin:$PATH"
+
+function yy() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
+}
+
+eval "$(starship init zsh)"
