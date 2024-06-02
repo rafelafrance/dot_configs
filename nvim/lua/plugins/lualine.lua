@@ -17,6 +17,11 @@ return {
 						},
 					},
 				},
+				lualine_z = {
+					function()
+						return vim.fn["codeium#GetStatusString"]()
+					end,
+				},
 			},
 		})
 	end,
