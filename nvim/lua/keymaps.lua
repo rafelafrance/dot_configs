@@ -27,3 +27,6 @@ vim.keymap.set("t", "<Esc><Esc>", "<C-\\><C-n>", { desc = "Exit terminal mode" }
 
 -- Remove end-of-line spaces
 vim.keymap.set("n", "<leader>$", ":%s/\\s\\+$//<CR>", { desc = "Remove space at the end of lines" })
+
+-- Mini plugins
+vim.keymap.set("n", "<leader>e", ":lua MiniFiles.open()<CR>", { desc = "Open File [E]xplorer" })
