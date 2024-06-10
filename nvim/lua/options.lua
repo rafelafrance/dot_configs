@@ -72,3 +72,6 @@ vim.opt.colorcolumn = "88"
 -- Spell check
 -- vim.opt.spelllang = "en_us"
 -- vim.opt.spell = true
+
+-- Disable codeium
+-- vim.g.codeium_disable = true
