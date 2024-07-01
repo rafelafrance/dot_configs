@@ -43,8 +43,10 @@ return {
 		-- capabilities = vim.tbl_deep_extend("force", capabilities, require("cmp_nvim_lsp").default_capabilities())
 		local servers = {
 			clangd = {},
-			-- pyright = {},
 			rust_analyzer = {},
+			zls = {
+				cmd = { "/home/rafe/.programs/zls/zig-out/bin/zls" },
+			},
 			lua_ls = {
 				settings = {
 					Lua = {
@@ -85,7 +87,7 @@ return {
 		})
 
 		-- Add LSPs
-		require("lspconfig").mojo.setup({})
+		-- require("lspconfig").mojo.setup({})
 		-- require("lspconfig").glslls.setup({})
 		-- require("lspconfig").glsl_analyzer.setup({})
 		-- require("lspconfig").jsonls.setup({})
