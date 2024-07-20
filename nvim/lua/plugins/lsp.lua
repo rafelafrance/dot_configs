@@ -54,6 +54,7 @@ return {
 							callSnippet = "Replace",
 						},
 					},
+					builtin_path = "/home/rafe/.cache/zls/builtin.zig",
 				},
 			},
 		}
