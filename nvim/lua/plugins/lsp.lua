@@ -44,9 +44,6 @@ return {
 		local servers = {
 			clangd = {},
 			rust_analyzer = {},
-			zls = {
-				cmd = { "/home/rafe/.programs/zls/zig-out/bin/zls" },
-			},
 			lua_ls = {
 				settings = {
 					Lua = {
@@ -54,7 +51,7 @@ return {
 							callSnippet = "Replace",
 						},
 					},
-					builtin_path = "/home/rafe/.cache/zls/builtin.zig",
+					-- builtin_path = "/home/rafe/.cache/zls/builtin.zig",
 				},
 			},
 		}
@@ -74,23 +71,13 @@ return {
 				end,
 			},
 		})
-		-- Configure `ruff-lsp`.
-		-- See: https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#ruff_lsp
 		-- For the default config, along with instructions on how to customize the settings
-		require("lspconfig").ruff.setup({})
-		require("lspconfig").ruff_lsp.setup({
-			init_options = {
-				settings = {
-					-- Any extra CLI arguments for `ruff` go here.
-					args = {},
-				},
-			},
-		})
-
-		-- Add LSPs
-		-- require("lspconfig").mojo.setup({})
-		-- require("lspconfig").glslls.setup({})
-		-- require("lspconfig").glsl_analyzer.setup({})
-		-- require("lspconfig").jsonls.setup({})
+		-- require("lspconfig").ruff.setup({
+		-- 	init_options = {
+		-- 		settings = {
+		-- 			-- Any extra CLI arguments for `ruff` go here.
+		-- 		},
+		-- 	},
+		-- })
 	end,
 }
