@@ -19,12 +19,11 @@ return {
 				"html",
 				"lua",
 				"markdown",
+				"python",
 				"vim",
 				"vimdoc",
-				"python",
 			},
-			-- autoinstall languages that are not installed
-			auto_install = true,
+			auto_install = true, -- autoinstall languages that are not installed
 			highlight = { enable = true },
 			indent = { enable = true },
 			incremental_selection = {
