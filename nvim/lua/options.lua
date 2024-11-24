@@ -1,6 +1,6 @@
 -- Line numbers
 vim.opt.number = true
--- vim.opt.relativenumber = true
+vim.opt.relativenumber = true
 
 -- Enable mouse mode
 vim.opt.mouse = "a"
@@ -29,7 +29,7 @@ vim.opt.expandtab = true
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
--- vim.opt.smartindent = true
+vim.opt.smartindent = true
 
 -- Show git line status
 vim.opt.signcolumn = "yes"
@@ -70,8 +70,5 @@ vim.opt.background = "dark"
 vim.opt.colorcolumn = "88"
 
 -- Spell check
--- vim.opt.spelllang = "en_us"
+vim.opt.spelllang = "en_us"
 -- vim.opt.spell = true
-
--- Disable codeium
--- vim.g.codeium_disable = true
