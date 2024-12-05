@@ -24,7 +24,7 @@ return {
 				"vimdoc",
 			},
 			auto_install = true, -- autoinstall languages that are not installed
-			highlight = { enable = true },
+			-- highlight = { enable = true },  # Turn off for rainbow_csv
 			indent = { enable = true },
 			incremental_selection = {
 				enable = true,

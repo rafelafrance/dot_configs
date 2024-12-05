@@ -17,7 +17,7 @@ vim.opt.breakindent = true
 -- Save undo history
 vim.opt.undofile = true
 
--- Configure how new splits should be opened
+-- Configure how new splits are opened
 vim.opt.splitbelow = true
 vim.opt.splitright = true
 
