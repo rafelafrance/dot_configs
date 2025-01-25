@@ -38,7 +38,6 @@ return {
 		})
 		local servers = {
 			clangd = {},
-			rust_analyzer = {},
 			lua_ls = {
 				settings = {
 					Lua = {
