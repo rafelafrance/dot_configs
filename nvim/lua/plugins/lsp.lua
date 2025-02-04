@@ -12,6 +12,14 @@ return {
 		local capabilities = require("blink.cmp").get_lsp_capabilities()
 		require("lspconfig").lua_ls.setup({ capabilities = capabilities })
 
+		require("lspconfig").ruff.setup({
+			init_options = {
+				settings = {
+					-- Ruff language server settings go here
+				},
+			},
+		})
+
 		vim.api.nvim_create_autocmd("LspAttach", {
 			group = vim.api.nvim_create_augroup("kickstart-lsp-attach", { clear = true }),
 			callback = function(event)
