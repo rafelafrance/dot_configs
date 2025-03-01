@@ -11,6 +11,7 @@ return {
 	config = function()
 		local capabilities = require("blink.cmp").get_lsp_capabilities()
 		require("lspconfig").lua_ls.setup({ capabilities = capabilities })
+		require("lspconfig").clangd.setup({})
 
 		require("lspconfig").ruff.setup({
 			init_options = {
@@ -85,7 +86,9 @@ return {
 		require("mason-tool-installer").setup({ ensure_installed = ensure_installed })
 
 		require("mason-lspconfig").setup({
-			ensure_installed = {},
+			ensure_installed = {
+				"clangd",
+			},
 			automatic_installation = true,
 			handlers = {
 				function(server_name)

@@ -3,10 +3,14 @@ return {
 		"saghen/blink.cmp",
 		dependencies = "rafamadriz/friendly-snippets",
 
-		version = "v0.*",
+		version = "*",
+
 		opts = {
 			keymap = {
 				preset = "default",
+				["<S-Tab>"] = { "select_prev", "fallback" },
+				["<Tab>"] = { "select_next", "fallback" },
+				["<C-Tab>"] = { "select_and_accept", "fallback" },
 			},
 
 			appearance = {
@@ -14,6 +18,7 @@ return {
 				nerd_font_variant = "mono",
 			},
 		},
+
 		opts_extend = { "sources.default" },
 	},
 }
