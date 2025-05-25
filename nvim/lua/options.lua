@@ -1,15 +1,15 @@
 -- Line numbers
 vim.opt.number = true
-vim.opt.relativenumber = true
+-- vim.opt.relativenumber = true
 
 -- Enable mouse mode
-vim.opt.mouse = "a"
+vim.opt.mouse = 'a'
 
 -- Don't show the mode, since it's already in status line
 vim.opt.showmode = false
 
 -- Sync clipboard between OS and Neovim
-vim.opt.clipboard = "unnamedplus"
+vim.opt.clipboard = 'unnamedplus'
 
 -- Enable break indent
 vim.opt.breakindent = true
@@ -32,7 +32,7 @@ vim.opt.shiftwidth = 4
 vim.opt.smartindent = true
 
 -- Show git line status
-vim.opt.signcolumn = "yes"
+vim.opt.signcolumn = 'yes'
 
 -- Decrease update time
 vim.opt.updatetime = 250
@@ -52,10 +52,10 @@ vim.opt.cursorline = true
 vim.opt.scrolloff = 10
 
 -- Allow cursor passed EOL in block mode
-vim.opt.virtualedit = "block"
+vim.opt.virtualedit = 'block'
 
 -- Preview substitutions when typing
-vim.opt.inccommand = "split"
+vim.opt.inccommand = 'split'
 
 -- Search options
 vim.opt.ignorecase = true
@@ -64,15 +64,17 @@ vim.opt.hlsearch = true
 
 -- Terminal colors
 vim.opt.termguicolors = true
-vim.opt.background = "dark"
+vim.opt.background = 'dark'
 
 -- Show ending column for Python
-vim.opt.colorcolumn = "88"
+-- vim.opt.colorcolumn = '88'
 
 -- Spell check
-vim.opt.spelllang = "en_us"
+vim.opt.spelllang = 'en_us'
 vim.opt.spell = false
 
 -- Make sure we ask before quiting with unsaved changes
 vim.opt.confirm = true
 
+-- Netrw options
+vim.g.netrw_banner = 0 -- Hide the Netrw banner on top
