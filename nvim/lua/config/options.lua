@@ -4,7 +4,7 @@
 
 -- Line numbers
 vim.opt.number = true
--- vim.opt.relativenumber = true
+vim.opt.relativenumber = false
 
 -- Enable mouse mode
 vim.opt.mouse = "a"

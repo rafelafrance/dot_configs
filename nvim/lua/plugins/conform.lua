@@ -8,7 +8,7 @@ return {
       },
       formatters = {
         clang_format = {
-          prepend_args = { "--style=file:~/.clang-format" },
+          prepend_args = { "--style=file" },
         },
         shfmt = {
           prepend_args = { "-i", "4" },
